@@ -336,11 +336,7 @@
                     <p>High noise, weak-moderate signal strength.</p>
                 </div>
 
-                <div class="h-80 mt-10">
-                    <canvas id="resultsChart"></canvas>
-                </div>
-
-
+                
 
 
             </div>
@@ -447,32 +443,7 @@
             }, 1000);
         }
 
-        // RESULTS CHART (Demo Data)
-        const chartElement = document.getElementById('resultsChart');
-        if (chartElement) {
-            const ctx = document.getElementById('resultsChart').getContext('2d');
-            new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['Existing System', 'Our Solution'],
-                    datasets: [{
-                        data: [70, 92],
-                        backgroundColor: ['#1e293b', '#3b82f6'],
-                        borderRadius: 15,
-                        barThickness: 50
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { legend: { display: false } },
-                    scales: {
-                        y: { beginAtZero: true, grid: { color: '#ffffff05' }, ticks: { color: '#475569' } },
-                        x: { grid: { display: false }, ticks: { color: '#475569' } }
-                    }
-                }
-            });
-        }
+       
 
         document.addEventListener("DOMContentLoaded", () => {
             startTimer();
