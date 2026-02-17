@@ -228,6 +228,17 @@
 
                 <div class="glass p-8 rounded-3xl">
                     <h3 class="font-bold text-purple-400 mb-3 uppercase text-xs tracking-widest">
+                        Splitting Strategy
+                    </h3>
+                    <p class="text-sm text-slate-400">
+                        Train range: 2021-08-05 12:44:50 → 2021-09-12 04:11:57 (70%)
+                        <br>
+                        Validation range: 2021-09-12 04:11:58 → 2021-11-26 02:11:39 (15%)
+                    </p>
+                </div>
+
+                <div class="glass p-8 rounded-3xl">
+                    <h3 class="font-bold text-purple-400 mb-3 uppercase text-xs tracking-widest">
                         Hypermeter Optimisation
                     </h3>
                     <p class="text-sm text-slate-400">
@@ -245,6 +256,8 @@
                         Dropout Rate: 0.3-0.6
                         <br>
                         Optimiser: AdamW
+                        <br>
+                        Learning Rate: 5e-05 to 0.0005
                         <br>
                         Batch Size: 32
                     </p>
@@ -323,6 +336,17 @@
             </h2>
 
             <div class="space-y-6 text-slate-400 text-sm">
+
+                <div>
+                    <h3 class="font-bold text-blue-400">Sequence Shape</h3>
+                    <p>Train Seq shape = (2016429, 120, 17) <br>Validation seq shape=(431997, 120, 17)</p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-blue-400">Best Hypermrters</h3>
+                    <p>LSTM layers = 2 <br>Units = 64 <br>Dropout =  0.4182390933142627 <br>Optimizer = AdamW <br>Learning Rate= 0.00049147762299616 <br>Batch Size= 32</p>
+                    
+                </div>
 
                 <div>
                     <h3 class="font-bold text-blue-400">k = 1 second</h3>
